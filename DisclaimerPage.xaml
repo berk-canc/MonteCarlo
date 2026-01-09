@@ -1,0 +1,71 @@
+﻿<Page
+    x:Class="MonteCarlo.DisclaimerPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MonteCarlo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Margin="24,0">
+
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton x:Name="AppBarButtonBack" Icon="Back" Label="Back" Click="AppBarButtonBack_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,8">
+
+        <Grid Grid.Column="0" Grid.Row="0" Margin="12,0" BorderBrush="Gray" BorderThickness="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Name="textBlockHeader" Text="Disclaimer" Grid.Row="0" FontSize="15" FontWeight="Bold" VerticalAlignment="Center" Margin="8,0"/>
+
+            <ScrollViewer Grid.Row="1" Margin="8,0" >
+                <RichTextBlock Name="textBlockContent" TextWrapping="WrapWholeWords" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                    <Paragraph FontSize="12">
+                        Indices are not available for direct investment; therefore, their performance does not reflect the expenses associated with the management of an actual portfolio. Past performance is not a guarantee of future results.
+                    </Paragraph>
+
+                    <Paragraph/>
+
+                    <Paragraph FontSize="12">
+                        This material is solely for informational purposes and shall not constitute an offer to sell or the solicitation to buy securities. The opinions expressed herein represent the current, good faith views of the author(s) at the time of publication and are provided for limited purposes, are not definitive investment advice, and should not be relied on as such. The information presented in this program has been developed internally and/or obtained from sources believed to be reliable; however, SharpDojo does not guarantee the accuracy, adequacy or completeness of such information.
+                    </Paragraph>
+
+                    <Paragraph/>
+
+                    <Paragraph FontSize="12">
+                        Predictions, opinions, and other information contained in this program are subject to change continually and without notice of any kind and may no longer be true after the date indicated. Any forward-looking statements speak only as of the date they are made, and SharpDojo assumes no duty to and does not undertake to update forward-looking statements. Forward-looking statements are subject to numerous assumptions, risks and uncertainties, which change over time. Actual results could differ materially from those anticipated in forward-looking statements.
+                    </Paragraph>
+
+                    <Paragraph/>
+
+                    <Paragraph FontSize="12">
+                        The returns of indices presented herein reflect hypothetical performance and do not represent returns that any investor actually attained. Changes in the assumptions upon which such performance is based may have a material impact on the hypothetical returns presented. Hypothetical backtested returns have many inherent limitations. Unlike actual performance, it does not represent actual trading. Since trades have not been actually been executed, results may have under- or overcompensated for the impact, if any, of certain market factors, such as lack of liquidity, and may not reflect the impact that certain economic or market factors may have had on the decision-making process. Hypothetical backtested performance also is developed with the benefit of hindsight. Other periods selected may have different results, including losses.
+                    </Paragraph>
+
+                    <Paragraph/>
+
+                    <Paragraph FontSize="12">
+                        Equity investment risks include loss of principal and fluctuating value. Small cap securities are subject to greater volatility than those in other asset categories. International investing involves special risks such as currency fluctuation and political instability. Investing in emerging markets may accentuate these risks. Sector-specific investments can also increase these risks.
+                    </Paragraph>
+
+                    <Paragraph/>
+
+                    <Paragraph FontSize="12">
+                        Fixed income risks include loss of principal and fluctuating value. Fixed income securities are subject to increased loss of principal during periods of rising interest rates. Fixed income investments are subject to various other risks including changes in credit quality, liquidity, prepayments, and other factors.
+                    </Paragraph>
+
+                    <Paragraph/>
+                </RichTextBlock>
+            </ScrollViewer>
+        </Grid>
+        
+    </Grid>
+</Page>

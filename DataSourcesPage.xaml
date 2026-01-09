@@ -1,0 +1,184 @@
+﻿<Page
+    x:Class="MonteCarlo.DataSourcesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MonteCarlo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.Content>
+                <Grid/>
+            </CommandBar.Content>
+            <AppBarButton x:Name="AppBarButtonBack" Icon="Back" Label="Back" Click="AppBarButtonBack_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
+    <Grid x:Name="MainGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,8">
+
+        <Grid Grid.Column="0" Grid.Row="0" Margin="12,0" BorderBrush="Gray" BorderThickness="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Name="textBlockHeader" Text="Data Sources" Grid.Row="0" FontSize="15" FontWeight="Bold" VerticalAlignment="Center" Margin="8,0"/>
+
+            <ScrollViewer Grid.Row="1" Margin="8,0" >
+                <RichTextBlock Name="textBlockContent" TextWrapping="WrapWholeWords" ScrollViewer.VerticalScrollBarVisibility="Auto">
+
+                    <Paragraph FontSize="12">
+                        CRSP 1-10 INDEX: 1926-2015
+                    </Paragraph>
+                    <Paragraph FontSize="12">
+                        CRSP Deciles 1-10 Index provided by the Center for Research in Security Prices, University of Chicago. July 1962-present: CRSP deciles 1-10 cap-based (market) portfolio; rebalanced quarterly-all exchanges; CRSP market index-weighted average of CRSP 1 through CRSP 10. January 1926-June 1962: NYSE; rebalanced semi-annually.
+                    </Paragraph>
+
+                    <Paragraph/>
+
+                    <Paragraph FontSize="12">
+                        S&amp;P 500 INDEX: 1926-2015
+                    </Paragraph>
+                    <Paragraph FontSize="12">
+                        Provided by Standard &amp; Poor’s Index Services Group. “Standard &amp; Poor’s®,” “S&amp;P®,” “S&amp;P 500®,” “Standard &amp; Poor’s 500®,” and “500” are trademarks of the McGraw-Hill Companies, Inc. and have been licensed for use by Dimensional Fund Advisors.
+                    </Paragraph>
+
+                    <Paragraph/>
+
+                    <Paragraph FontSize="12">
+                        DIMENSIONAL US SMALL CAP INDEX: 1928-2015
+                    </Paragraph>
+                    <Paragraph FontSize="12">
+                        January 1975-present: Compiled by Dimensional from CRSP and Compustat data. Targets securities of US companies traded on the NYSE, NYSE MKT (formerly AMEX), and Nasdaq Global Market whose market capitalization falls in the lowest 8% of the total market capitalization of the eligible market. The index emphasizes companies with higher profitability. Profitability is measured as operating income before depreciation and amortization minus interest expense scaled by book. Exclusions: non-US companies, REITs, UITs, and investment companies. The index has been retroactively calculated by Dimensional and did not exist prior to March 2007. The calculation methodology for the Dimensional US Small Cap Index was amended in January 2014 to include direct profitability as a factor in selecting securities for inclusion in the index.
+                    </Paragraph>
+                    <Paragraph FontSize="12">
+                        June 1927-December 1974: Targets securities of US companies traded on the NYSE, NYSE MKT (formerly AMEX), and Nasdaq Global Market whose market capitalization falls in the lowest 8% of the total market capitalization of the eligible market.
+                    </Paragraph>
+
+                    <Paragraph/>
+
+                    <Paragraph FontSize="12">
+                        DIMENSIONAL US SMALL CAP VALUE INDEX: 1928-2015
+                    </Paragraph>
+                    <Paragraph FontSize="12">
+                        January 1975-present: Compiled by Dimensional from CRSP and Compustat data. Targets securities of US companies traded on the NYSE, NYSE MKT (formerly AMEX), and Nasdaq Global Market whose relative price is in the bottom 35% of the Dimensional US Small Cap Index after the exclusion of utilities, companies lacking financial data, and companies with negative relative price. The index emphasizes securities with higher profitability, lower relative price, and lower market capitalization. Profitability is measured as operating income before depreciation and amortization minus interest expense scaled by book. Exclusions: non-US companies, REITs, UITs, and investment companies. The index has been retroactively calculated by Dimensional and did not exist prior to March 2007. The calculation methodology for the Dimensional US Small Cap Value Index was amended in January 2014 to include direct profitability as a factor in selecting securities for inclusion in the index.
+                    </Paragraph>
+                    <Paragraph FontSize="12">
+                        June 1927-December 1974: Targets securities of US companies traded on the NYSE, NYSE MKT (formerly AMEX), and Nasdaq Global Market whose relative price is in the bottom 25% of the Dimensional US Small Cap Index after the exclusion of utilities, companies lacking financial data, and companies with negative relative price.
+                    </Paragraph>
+
+                    <Paragraph/>
+
+                    <Paragraph FontSize="12">
+                        MSCI EAFE INDEX: 1970-2015
+                    </Paragraph>
+                    <Paragraph FontSize="12">
+                        MSCI EAFE Index (net dividends) © MSCI 2016, all rights reserved. Without prior written permission of MSCI, this information and any other MSCI intellectual property may only be used for your internal use, may not be reproduced or redisseminated in any form, and may not be used to create any financial instruments or products or any indices. This information is provided on an “as is” basis, and the user of this information assumes the entire risk of any use made of this information. Neither MSCI nor any third party involved in or related to the computing or compiling of the data makes any express or implied warranties, representations, or guarantees concerning the MSCI index-related data, and in no event will MSCI or any third party have any liability for any direct, indirect, special, punitive, consequential, or any other damages (including lost profits) relating to any use of this information.
+                    </Paragraph>
+
+                    <Paragraph/>
+
+                    <Paragraph FontSize="12">
+                        DIMENSIONAL INTERNATIONAL SMALL CAP INDEX: 1988-2015
+                    </Paragraph>
+                    <Paragraph FontSize="12">
+                        January 1994-present: Compiled by Dimensional from Bloomberg securities data. Market-capitalization-weighted index of small company securities in the eligible markets excluding those with the lowest profitability and highest relative price within the small cap universe. Profitability is measured as operating income before depreciation and amortization minus interest expense scaled by book. Exclusions: REITs and investment companies. The index has been retroactively calculated by Dimensional and did not exist prior to April 2008. The calculation methodology for the Dimensional International Small Cap Index was amended in January 2014 to include direct profitability as a factor in selecting securities for inclusion in the index.
+                    </Paragraph>
+                    <Paragraph FontSize="12">
+                        July 1981-1993: Created by Dimensional; includes securities of MSCI EAFE countries in the bottom 10% of market capitalization excluding the bottom 1%. All securities are market capitalization weighted. Each country is capped at 50%; rebalanced semiannually.
+                    </Paragraph>
+                    <Paragraph FontSize="12">
+                        January 1970-June 1981: 50% Hoare Govett Small Companies Index, 50% Nomura Small Companies Index.
+                    </Paragraph>
+
+                    <Paragraph/>
+
+                    <Paragraph FontSize="12">
+                        MSCI EMERGING MARKETS INDEX: 1988-2015
+                    </Paragraph>
+                    <Paragraph FontSize="12">
+                        MSCI Emerging Markets Index (gross dividends) © MSCI 2016, all rights reserved.
+                    </Paragraph>
+
+                    <Paragraph/>
+
+                    <Paragraph FontSize="12">
+                        THREE-MONTH US TREASURY BILLS: 1928-2015
+                    </Paragraph>
+                    <Paragraph FontSize="12">
+                        Prof. Aswath Damodaran, M.B.A., Ph.D., New York University.
+                    </Paragraph>
+
+                    <Paragraph/>
+
+                    <Paragraph FontSize="12">
+                        LONG-TERM CORPORATE BONDS: 1926-2015
+                    </Paragraph>
+                    <Paragraph FontSize="12">
+                        © 2015 and earlier, Morningstar. All Rights Reserved. Underlying data is from the Ibbotson SBBI Yearbook, by Roger G. Ibbotson and Rex A. Sinquefield. Updated annually. Includes US corporate bonds with an average maturity of 20 years.
+                    </Paragraph>
+
+                    <Paragraph/>
+
+                    <Paragraph FontSize="12">
+                        BARCLAYS US AGGREGATE BOND INDEX: 1976-2015
+                    </Paragraph>
+                    <Paragraph FontSize="12">
+                        Provided by Barclays Bank PLC.
+                    </Paragraph>
+
+                    <Paragraph/>
+
+                    <Paragraph FontSize="12">
+                        BARCLAYS MUNICIPAL BOND INDX: 1980-2015
+                    </Paragraph>
+                    <Paragraph FontSize="12">
+                        Provided by Barclays Bank PLC.
+                    </Paragraph>
+
+                    <Paragraph/>
+
+                    <Paragraph FontSize="12">
+                        DOW JONES US SELECT REIT INDEX: 1978-2015
+                    </Paragraph>
+                    <Paragraph FontSize="12">
+                        Provided by Dow Jones Indexes.
+                    </Paragraph>
+
+                    <Paragraph/>
+
+                    <Paragraph FontSize="12">
+                        BLOOMBERG COMMODITY TOTAL RETURN INDEX: 1992-2015
+                    </Paragraph>
+                    <Paragraph FontSize="12">
+                        Securities and commodities data provided by Bloomberg.
+                    </Paragraph>
+
+                    <Paragraph/>
+
+                    <Paragraph FontSize="12">
+                        Gold Price: 1968-2016
+                    </Paragraph>
+                    <Paragraph FontSize="12">
+                        London Fixings, London Bullion Market Association (LBMA).
+                    </Paragraph>
+
+                    <Paragraph/>
+
+                    <Paragraph FontSize="12">
+                        US INFLATION: CHANGES IN US CONSUMER PRICE INDEX: 1926–2015
+                    </Paragraph>
+                    <Paragraph FontSize="12">
+                        © 2015 and earlier, Morningstar. All Rights Reserved. Underlying data is from the Ibbotson. SBBI Yearbook, by Roger G. Ibbotson and Rex A. Sinqueﬁeld. Updated annually.
+                    </Paragraph>
+
+                    <Paragraph/>
+
+                </RichTextBlock>
+            </ScrollViewer>
+        </Grid>
+
+    </Grid>
+</Page>
